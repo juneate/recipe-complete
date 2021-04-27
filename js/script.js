@@ -1,14 +1,3 @@
-/* 
-When I click a `.gallery-btn`...
-  - Remove `.active` from any `.gallery-btn.active`
-  - Remove `.active` from any `.gallery-img.active`
-  
-  - Find the `.gallery-img` that matches id from `aria-controls`
-
-  - For the `.gallery-btn` clicked, add `.active`
-  - For the `.gallery-img` that matches, add `.active`
-*/
-
 const allImages = [
   {
     filename: `img/gallery-a.jpg`, 
@@ -73,6 +62,17 @@ allImages.forEach(function(anImg, index) {
 })
 
 
+
+/* 
+When I click the `.gallery-controls`...
+  - Remove `.active` from any `.gallery-btn.active`
+  - Remove `.active` from any `.gallery-img.active`
+  
+  - Find the `.gallery-img` that matches id from `aria-controls`
+
+  - For the `.gallery-btn` clicked, add `.active`
+  - For the `.gallery-img` that matches, add `.active`
+*/
 theControls.addEventListener(`click`, function(event) {
 
   // The thing that was clicked
